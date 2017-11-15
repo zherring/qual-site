@@ -5,8 +5,7 @@
     }
 
 body, html {
-    margin: 0;
-    padding: 0;
+
     }
 
 #splash {
@@ -14,7 +13,7 @@ body, html {
     overflow: hidden;
 }
 
-#splash h1, h2, p, a {
+#splash h1, #splash h2, #splash p, #splash a {
     color: var(--white);
     text-align: center;
-}
+    }

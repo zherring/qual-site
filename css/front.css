@@ -2,13 +2,18 @@
     --main-blue: #2894E5;
     --white: #FFF;
     font-family: helvetica, arial, san-serif;
+    font-size: 16px;
     }
 
 body, html {
 
     }
 
-#splash {
+h1,h2,h3,h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+#splash, #pricing {
     background: var(--main-blue);
     overflow: hidden;
 }
@@ -16,4 +21,24 @@ body, html {
 #splash h1, #splash h2, #splash p, #splash a {
     color: var(--white);
     text-align: center;
+    }
+
+#splash .btn {
+    background: #FF5A54;
+    background-image: linear-gradient(-135deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    border: 1px solid #FF928B;
+    border-radius: 10px;
+    }
+
+#laptop-ui {
+    width: 50%;
+}
+
+#laptop-ui img { width: 100%; }
+
+.card {
+    background: var(--white);
+    box-shadow: 0 2px 20px 0 #0F6BB0;
+    border-radius: 5px;
+    width: 21em;
     }

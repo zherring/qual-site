@@ -1,0 +1,20 @@
+* {
+    --main-blue: #2894E5;
+    --white: #FFF;
+    font-family: helvetica, arial, san-serif;
+    }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    }
+
+#splash {
+    background: var(--main-blue);
+    overflow: hidden;
+}
+
+#splash h1, h2, p, a {
+    color: var(--white);
+    text-align: center;
+}

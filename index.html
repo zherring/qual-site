@@ -33,19 +33,43 @@
             </header>
             <h1>Finally, a professional tool for researchers. Finally.</h1>
 
-            <div id="audio-player" class="flex flex-row">
+            <div id="audio-player" class="flex flex-col">
+                <div id="audio-label">
+                    <small>Usability Study</small>
+                    <h3>Interview with Andrew at 10-21-17, 9.34</h3>
+                </div>
+                <div class="flex flex-row">
+                    <audio id="audio-file">
+                        <source src="files/Devil_Music_-_03_-_Go.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    <div id="audio-player-left">
 
-                <div id="audio-player-left">&#9658;</div>
+                        <div id="audio-control" class="toggle">
+                            <!-- <img src="img/play-button.svg" /> -->
+                            ►
+                        </div>
 
-                <div id="audio-player-right">
-                    <div id="audio-timeline">
 
                     </div>
-                    <div id="time-passed">0</div>
-                    <div id="time-total">32s</div>
+                    <div id="audio-player-right">
+                        <div id="audio-timeline">
+                            <div class="progress">
+                                 <div class="progress__filled"></div>
+                            </div>
 
+                        </div>
+                        <div class="flex flex-row">
+                            <div class="time-stamp">
+                                <span id="time-passed">0</span>s
+                            </div>
+                            <div class="time-stamp">
+                                <span id="time-total">385</span>s
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                </div>
 
             <!-- <img src="img/splash-bg.jpg" /> -->
 

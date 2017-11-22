@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="19px" viewBox="0 0 27 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>comment-tail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="3 2 12.4925537 13.0793457 22.1517334 2"></polygon>
+        <filter x="-41.8%" y="-54.2%" width="183.5%" height="244.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.111922554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="polish" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="comment-tail" transform="translate(1.000000, 0.000000)">
+            <polyline id="Path-4-Copy-2" fill="#F7F7F7" points="0.575866699 2.01912674 12.471463 15.9032119 24.5758667 2.01912674"></polyline>
+            <g id="Path-4">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FBFAFB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#979797" stroke-width="1" d="M1.91318977,1.5 L23.2509804,1.5 L12.4892624,13.8439876 L1.91318977,1.5 Z"></path>
+            </g>
+            <polyline id="Path-4-Copy" fill="#FBFAFB" points="1 0 12.3999465 13.3055816 24 0"></polyline>
+        </g>
+    </g>
+</svg>

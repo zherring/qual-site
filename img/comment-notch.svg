@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>comment-notch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M138.296296,108.777778 L143.4,108.777778 C143.731371,108.777778 144,108.509149 144,108.177778 L144,101.6 C144,101.268629 143.731371,101 143.4,101 L133.6,101 L133.6,101 C133.268629,101 133,101.268629 133,101.6 L133,101.6 L133,108.177778 C133,108.509149 133.268629,108.777778 133.6,108.777778 L135.037037,108.777778 L136.666667,111 L138.296296,108.777778 Z" id="path-1"></path>
+    </defs>
+    <g id="polish" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-Copy" transform="translate(-336.000000, -336.000000)">
+            <g id="Group" transform="translate(204.000000, 236.000000)">
+                <g id="comment-notch">
+                    <use fill="#D84C47" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#FBFAFB" stroke-width="1" d="M138.549665,109.277778 L136.666667,111.845503 L134.783668,109.277778 L133.6,109.277778 C132.992487,109.277778 132.5,108.785291 132.5,108.177778 L132.5,101.6 C132.5,100.992487 132.992487,100.5 133.6,100.5 L143.4,100.5 C144.007513,100.5 144.5,100.992487 144.5,101.6 L144.5,108.177778 C144.5,108.785291 144.007513,109.277778 143.4,109.277778 L138.549665,109.277778 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

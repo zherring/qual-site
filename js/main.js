@@ -1,3 +1,20 @@
+//comments
+
+const commentContainer = document.querySelector(".comment-container");
+
+function commentToggle (e) {
+    console.log("comment logged!", e, (this.classList.contains("closed")));
+    this.classList.contains("closed") ? this.classList.remove("closed") : this.classList.add("closed");
+}
+
+commentContainer.addEventListener("click", commentToggle);
+
+
+
+
+
+
+
 
 // audio fix
 const player = document.querySelector('#audio-player');

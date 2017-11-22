@@ -41,6 +41,29 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/front.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/front.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/main-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/main-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -250,6 +273,36 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/comment-notch.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/comment-notch.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/comment-tail.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/comment-tail.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/laptop-ui.jpg": {
 		"ft": 16384,
 		"iS": 144030,
@@ -290,6 +343,50 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/profile-1.png": {
+		"ft": 32768,
+		"iS": 2329,
+		"oA": 0,
+		"oAP": "\/img\/profile-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/profile-2.png": {
+		"ft": 32768,
+		"iS": 2192,
+		"oA": 0,
+		"oAP": "\/img\/profile-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/profile-3.png": {
+		"ft": 32768,
+		"iS": 3235,
+		"oA": 0,
+		"oAP": "\/img\/profile-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/profile-4.png": {
+		"ft": 32768,
+		"iS": 3305,
+		"oA": 0,
+		"oAP": "\/img\/profile-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/splash-bg.jpg": {
 		"ft": 16384,

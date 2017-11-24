@@ -50,7 +50,6 @@ article > div {
   height: 100vh; }
 
 #splash {
-  background: url("/img/splash-bg.jpg") no-repeat center top;
   background-size: contain; }
 
 #splash h1, #splash h2, #splash p, #splash a {
@@ -139,12 +138,14 @@ article > div {
   /*border-radius: 10px;*/ }
 
 #notation-timeline {
-  height: 1.4em;
-  margin-top: -1.4em; }
+  margin-bottom: -.5em;
+  z-index: 10;
+  postion: relative; }
+
+#audio-player-left {
+  margin-right: 1em; }
 
 #audio-player-right {
-  padding-top: 1.5em;
-  margin-left: 1em;
   width: 100%; }
 
 #audio-player h3 {
@@ -179,49 +180,53 @@ article > div {
     height: 1em;
     z-index: 3;
     position: absolute;
-    bottom: -.9em;
-    left: 1.3em; }
-  #splash .comment-container::before {
-    content: "";
-    display: block;
-    width: 16.75em;
-    height: 1em;
-    background-image: linear-gradient(0deg, #FBFAFB 22%, rgba(251, 250, 251, 0) 100%);
-    z-index: 3;
-    position: absolute;
-    bottom: .05em;
-    left: .4em; }
+    top: 2.2em;
+    left: -.2em;
+    transform: rotate(180deg);
+    transition: all .1s ease-in-out; }
   #splash .comment-container .comment-pop {
-    max-height: 6.5em;
-    overflow: scroll;
     z-index: 0;
-    display: absolute;
+    position: absolute;
+    left: -2.5em;
+    top: 3.6em;
     width: 18.75em;
     background: #FBFAFB;
-    border: 1px solid var(--dark-gray);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11), 0 3px 0 0 #FFFFFF;
-    padding: 1em;
-    border-radius: .375em;
-    font-size: .85em; }
+    border: 1px solid var(--gray);
+    box-shadow: 0 .3em .9em 0 #0F6BB0;
+    border-radius: 1.5em;
+    font-size: .85em;
+    transition: all .1s ease-in-out;
+    visibility: visible;
+    opacity: 1; }
     #splash .comment-container .comment-pop p {
       text-align: left;
       color: #6A6A6A;
       padding: 0;
       margin: .4em 0 1em; }
+  #splash .comment-container section {
+    margin: 1em 1em; }
   #splash .comment-container header {
     align-items: center;
     font-size: .85em; }
-  #splash .comment-container .user-ico img {
-    width: 2.3em;
-    margin-right: .5em; }
-  #splash .comment-container .comment-notch {
-    display: none; }
+    #splash .comment-container header strong {
+      font-size: 2em;
+      font-family: 'Roboto Condensed';
+      vertical-align: middle; }
+  #splash .comment-container .user-ico {
+    width: 2.3em; }
+  #splash .comment-container .comment-notch .user-ico img {
+    width: 1.5em;
+    margin-top: .5em; }
   #splash .comment-container.closed::after {
-    display: none; }
+    visibility: none;
+    opacity: 0;
+    top: 1.6em; }
   #splash .comment-container.closed::before {
     display: none; }
   #splash .comment-container.closed .comment-pop {
-    display: none; }
+    visibility: hidden;
+    opacity: 0;
+    top: 2.6em; }
   #splash .comment-container.closed .comment-notch {
     display: inherit; }
 

@@ -1,13 +1,16 @@
 //comments
 
-const commentContainer = document.querySelector(".comment-container");
+const commentContainer = document.querySelectorAll(".comment-container");
 
 function commentToggle (e) {
     console.log("comment logged!", e, (this.classList.contains("closed")));
     this.classList.contains("closed") ? this.classList.remove("closed") : this.classList.add("closed");
+    // commentContainer.forEach(comment => comment.classList.add("closed"));
 }
 
-commentContainer.addEventListener("click", commentToggle);
+commentContainer.forEach(comment => comment.addEventListener("click", commentToggle));
+
+// ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
 
 
 

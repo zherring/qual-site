@@ -244,16 +244,22 @@ article > div {
   color: #000000; }
 
 #features {
-  background: url("/img/laptop-ui.png") no-repeat right center;
-  background-size: auto 32rem;
-  height: 32rem; }
+  padding: 0;
+  padding-left: 1em;
+  color: var(--white);
+  margin-bottom: -1.9em;
+  justify-content: center; }
 
 #cards {
-  width: 20%; }
+  width: 15%;
+  min-width: 12rem; }
 
 #laptop {
-  width: auto;
-  max-width: 80%; }
+  background: url("/img/laptop-ui.png") no-repeat left center;
+  background-size: cover;
+  height: 32rem;
+  max-width: 52em;
+  width: 80%; }
 
 #signup {
   background: var(--white);

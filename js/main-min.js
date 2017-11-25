@@ -49,6 +49,7 @@ function handleRangeUpdate() {
 function handleProgress() {
   const percent = (audio.currentTime / audio.duration) * 100;
   progressBar.style.flexBasis = `${percent}%`;
+  console.log("logged")
 }
 
 function scrub(e) {
@@ -60,12 +61,10 @@ function scrub(e) {
 function updateTime(e) {
     const currentTime = Math.floor(audio.currentTime);
     const duration = Math.floor(audio.duration);
-    // timePassed.
+
     timePassed.textContent = currentTime;
     timeTotal.textContent = duration;
-    console.log("fired");
-
-}
+    }
 
 // listeners
 audio.addEventListener('click', togglePlay);
@@ -76,9 +75,14 @@ audio.addEventListener('timeupdate', handleProgress);
 let mousedown = false;
 
 audioControl.addEventListener('click', togglePlay);
-progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
-progress.addEventListener('mousedown', () => mousedown = true);
-progress.addEventListener('mouseup', () => mousedown = false);
+progress.addEventListener('click', (e) => scrub(e));
+
+// progress.addEventListener('click', (e) => console.log(e));
+
+
+// progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+// progress.addEventListener('mousedown', () => mousedown = true);
+// progress.addEventListener('mouseup', () => mousedown = false);
 
 audio.addEventListener('timeupdate', updateTime, false);
 

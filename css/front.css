@@ -251,15 +251,15 @@ article > div {
   justify-content: center; }
 
 #cards {
-  width: 15%;
+  max-width: 15rem;
   min-width: 12rem; }
 
 #laptop {
   background: url("/img/laptop-ui.png") no-repeat left center;
-  background-size: cover;
+  background-size: 52rem auto;
   height: 32rem;
-  max-width: 52em;
-  width: 80%; }
+  width: 52rem;
+  max-width: 52rem; }
 
 #signup {
   background: var(--white);

@@ -436,6 +436,9 @@ article > div { padding: .5rem; }
     padding-left: 1em;
     color: var(--white);
     justify-content: center;
+    align-items: middle;
+    padding-bottom: 3rem;
+
 
     /*
     // translucent ones
@@ -463,7 +466,11 @@ article > div { padding: .5rem; }
       margin: .25em 0;
       border-radius: .25em;
       color: #435055;
-      padding: 3em;
+      padding: 2.5rem;
+
+      width: 23rem;
+      min-height: 12vh;
+
 
       h3 {
         color: var(--blue);
@@ -474,19 +481,18 @@ article > div { padding: .5rem; }
 
     }
 
-    }
+}
 
 #cards {
-    max-width: 15rem;
-    min-width: 12rem;
+
     }
 
 #laptop {
     background: url("/img/laptop-ui.png") no-repeat left center;
     background-size: 52rem auto;
     height: 32rem;
-    width: 52rem;
-    max-width: 52rem;
+    width: 100%;
+    min-height: 85vh;
     }
 
 #signup {

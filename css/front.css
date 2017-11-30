@@ -380,6 +380,8 @@ article > div {
   padding-left: 1em;
   color: var(--white);
   justify-content: center;
+  align-items: middle;
+  padding-bottom: 3rem;
   /*
     // translucent ones
     #cards > div:not(.active) {
@@ -404,23 +406,21 @@ article > div {
     margin: .25em 0;
     border-radius: .25em;
     color: #435055;
-    padding: 3em; }
+    padding: 2.5rem;
+    width: 23rem;
+    min-height: 12vh; }
     #features #cards > div h3 {
       color: var(--blue);
       font-size: 2em;
       font-weight: 300;
       margin: 0; }
 
-#cards {
-  max-width: 15rem;
-  min-width: 12rem; }
-
 #laptop {
   background: url("/img/laptop-ui.png") no-repeat left center;
   background-size: 52rem auto;
   height: 32rem;
-  width: 52rem;
-  max-width: 52rem; }
+  width: 100%;
+  min-height: 85vh; }
 
 #signup {
   background: var(--white);

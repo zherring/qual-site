@@ -11,11 +11,12 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/front.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
 
     </head>
@@ -28,251 +29,287 @@
 
         <section id="splash">
             <header class="flex flex-row">
-                <img id="logo" src="img/logo.svg" />
+                <img id="logo" src="img/np-logo.svg" />
                 <!-- <a href="#" class="btn-small">Log In</a> -->
             </header>
-            <h1>Finally, a professional tool for researchers. Finally.</h1>
+            <h1>Finally, a professional tool for researchers.</h1>
+            <p>Stop sharing word docs and txt files. start sharing your users’ own words.</p>
+            <div id="audio-player-wrap">
+              <div id="audio-player" class="flex flex-col closed">
+                  <div id="audio-label">
+                      <small>Usability Study</small>
+                      <h3>Interview with Andrew at 10-21-17, 9.34</h3>
+                  <div class="flex flex-row">
+                      <audio id="audio-file">
+                          <source src="files/qualitool-interview-v1.mp3" type="audio/mpeg">
+                              Your browser does not support the audio element.
+                          </audio>
+                      <div id="audio-player-left">
 
-            <div id="audio-player" class="flex flex-col closed">
-                <div id="audio-label">
-                    <small>Usability Study</small>
-                    <h3>Interview with Andrew at 10-21-17, 9.34</h3>
-                <div class="flex flex-row">
-                    <audio id="audio-file">
-                        <source src="files/qualitool-interview-v1.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    <div id="audio-player-left">
+                          <svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="audio-control" class="toggle play button-control">
+                              <g id="polish" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="Artboard-Copy" transform="translate(-357.000000, -395.000000)">
+                                      <g id="Group-3" transform="translate(322.000000, 306.000000)">
+                                          <g id="play" transform="translate(35.000000, 89.000000)">
+                                              <circle id="Oval-Copy" fill="#F4F0F4" cx="37" cy="37" r="37"></circle>
+                                              <polygon id="Triangle-Copy" fill="#2894E5" points="54 37.5 28 54 28 21"></polygon>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
 
-                        <div id="audio-control" class="toggle">
-                            <!-- <img src="img/play-button.svg" /> -->
-                            ►
-                        </div>
-
-
-                    </div>
-                    <div id="audio-player-right" class="flex flex-col">
-                        <div class="flex flex-row">
-                            <div class="time-stamp">
-                                <span id="time-passed"><0:00></0:00></span>
-                            </div>
-                            <div class="time-stamp">
-                                <span id="time-total">2:24</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="progress">
-                                 <div class="progress__filled"></div>
-                            </div>
-                        </div>
-
-                        <div id="notation-timeline" class="flex flex-row">
-
-                            <div class="comment-container comment-1 closed">
-                                <div class="comment-pop">
-                                    <section>
-                                        <header class="flex flex-row">
-                                            <div>
-                                                <span class="user-ico"><img src="/img/profile-4.png" /></span>
-                                                <strong>Cameron</strong>
-                                            </div>
-                                            <div>
-                                                <img src="img/icons.svg" />
-                                            </div>
-                                        </header>
-                                        <article>
-                                            <p>You’re so loud, Gordon! Let’s position the mic a little closer to the subject next time.</p>
-                                            <span class="tag">#set-up</span><span class="tag">#future-studies</span>
-                                        </article>
-                                    </section>
+                          <!-- HIDDEN PAUSE BUTTON -->
+                          <svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="toggle pause hidden button-control">
+                              <g id="polish" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="pause">
+                                      <circle id="Oval-Copy" fill="#2894E5" cx="37" cy="37" r="37"></circle>
+                                      <g id="Group-15" transform="translate(24.000000, 23.000000)" fill="#FFFFFF">
+                                          <path d="M0,0 L10,0 L10,28 L0,28 L0,0 Z M16,0 L26,0 L26,28 L16,28 L16,0 Z" id="Combined-Shape"></path>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
 
 
-                                </div>
-                                <div class="comment-notch">
-                                    <span class="user-ico"><img src="/img/profile-4.png" /></span>
-                                </div>
-                            </div>
+                      </div>
+                      <div id="audio-player-right" class="flex flex-col">
+                          <div class="flex flex-row">
+                              <div class="time-stamp">
+                                  <span id="time-passed"><0:00></0:00></span>
+                              </div>
+                              <div class="time-stamp">
+                                  <span id="time-total">2:24</span>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="progress">
+                                   <div class="progress__filled"></div>
+                              </div>
+                          </div>
 
-                            <div class="comment-container closed comment-2">
-                                <div class="comment-pop">
-                                    <section>
-                                        <header class="flex flex-row">
-                                            <div class="">
-                                                <span class="user-ico"><img src="/img/profile-4.png" /></span>
-                                                <strong>Cameron</strong>
-                                            </div>
-                                            <div>
-                                                <img src="img/icons.svg" />
-                                            </div>
-                                        </header>
-                                        <article>
-                                            <p>The call to action is getting confused w/ the app main-button styling. #ui #confusing #loss</p>
-                                            <span class="tag">#ui</span><span class="tag">#confusing</span><span class="tag">#loss</span>
-                                        </article>
-                                    </section>
+                          <div id="notation-timeline" class="flex flex-row">
 
-
-                                </div>
-                                <div class="comment-notch">
-                                    <span class="user-ico"><img src="/img/profile-4.png" /></span>
-                                </div>
-                            </div>
-
-                            <div class="comment-container closed comment-3">
-                                <div class="comment-pop">
-                                    <section>
-                                        <header class="flex flex-row">
-                                            <div class="">
-                                                <span class="user-ico"><img src="/img/profile-2.png" /></span>
-                                                <strong>Joe</strong>
-                                            </div>
-                                            <div>
-                                                <img src="img/icons.svg" />
-                                            </div>
-                                        </header>
-                                        <article>
-                                            <p>Push notifications is a <span class="tag">#win</span></p>
-                                        </article>
-                                    </section>
+                              <div class="comment-container comment-1 closed">
+                                  <div class="comment-pop">
+                                      <section>
+                                          <header class="flex flex-row">
+                                              <div>
+                                                  <span class="user-ico"><img src="/img/profile-4.png" /></span>
+                                                  <strong>Cameron</strong>
+                                              </div>
+                                              <div>
+                                                  <img src="img/icons.svg" />
+                                              </div>
+                                          </header>
+                                          <article>
+                                              <p>You’re so loud, Gordon! Let’s position the mic a little closer to the subject next time.</p>
+                                              <span class="tag">#set-up</span><span class="tag">#future-studies</span>
+                                          </article>
+                                      </section>
 
 
-                                </div>
-                                <div class="comment-notch">
-                                    <span class="user-ico"><img src="/img/profile-2.png" /></span>
-                                </div>
-                            </div>
+                                  </div>
+                                  <div class="comment-notch">
+                                      <span class="user-ico"><img src="/img/profile-4.png" /></span>
+                                  </div>
+                              </div>
 
-                            <div class="comment-container closed comment-4">
-                                <div class="comment-pop">
-                                    <section>
-                                        <header class="flex flex-row">
-                                            <div class="">
-                                                <span class="user-ico"><img src="/img/profile-1.png" /></span>
-                                                <strong>Gordon</strong>
-                                            </div>
-                                            <div>
-                                                <img src="img/icons.svg" />
-                                            </div>
-                                        </header>
-                                        <article>
-                                            <p>Missing technical details</p>
-                                            <p>He works a lot closer with engineering than I expected for someone so high level.</p>
-                                        </article>
-                                    </section>
-
-
-                                </div>
-                                <div class="comment-notch">
-                                    <span class="user-ico"><img src="/img/profile-1.png" /></span>
-                                </div>
-                            </div>
-
-                            <div class="comment-container closed comment-5">
-                                <div class="comment-pop">
-                                    <section>
-                                        <header class="flex flex-row">
-                                            <div class="">
-                                                <span class="user-ico"><img src="/img/profile-4.png" /></span>
-                                                <strong>Cameron</strong>
-                                            </div>
-                                            <div>
-                                                <img src="img/icons.svg" />
-                                            </div>
-                                        </header>
-                                        <article>
-                                            <p>Unclear iconography. Check out competitor.</p>
-                                            <span class="tag">#future-studies</span><span class="tag">competition</span>
-                                        </article>
-                                    </section>
+                              <div class="comment-container closed comment-2">
+                                  <div class="comment-pop">
+                                      <section>
+                                          <header class="flex flex-row">
+                                              <div class="">
+                                                  <span class="user-ico"><img src="/img/profile-4.png" /></span>
+                                                  <strong>Cameron</strong>
+                                              </div>
+                                              <div>
+                                                  <img src="img/icons.svg" />
+                                              </div>
+                                          </header>
+                                          <article>
+                                              <p>The call to action is getting confused w/ the app main-button styling. #ui #confusing #loss</p>
+                                              <span class="tag">#ui</span><span class="tag">#confusing</span><span class="tag">#loss</span>
+                                          </article>
+                                      </section>
 
 
-                                </div>
-                                <div class="comment-notch">
-                                    <span class="user-ico"><img src="/img/profile-4.png" /></span>
-                                </div>
-                            </div>
+                                  </div>
+                                  <div class="comment-notch">
+                                      <span class="user-ico"><img src="/img/profile-4.png" /></span>
+                                  </div>
+                              </div>
 
-                            <div class="comment-container closed comment-6">
-                                <div class="comment-pop">
-                                    <section>
-                                        <header class="flex flex-row">
-                                            <div class="">
-                                                <span class="user-ico"><img src="/img/profile-1.png" /></span>
-                                                <strong>Gordon</strong>
-                                            </div>
-                                            <div>
-                                                <img src="img/icons.svg" />
-                                            </div>
-                                        </header>
-                                        <article>
-                                            <p>Interesting team make up. Can we put a survey together to see how this maps to other teams?</p>
-                                            <span class="tag">#future-studies</span><span class="tag">competition</span>
-                                        </article>
-                                    </section>
-
-
-                                </div>
-                                <div class="comment-notch">
-                                    <span class="user-ico"><img src="/img/profile-1.png" /></span>
-                                </div>
-                            </div>
+                              <div class="comment-container closed comment-3">
+                                  <div class="comment-pop">
+                                      <section>
+                                          <header class="flex flex-row">
+                                              <div class="">
+                                                  <span class="user-ico"><img src="/img/profile-2.png" /></span>
+                                                  <strong>Joe</strong>
+                                              </div>
+                                              <div>
+                                                  <img src="img/icons.svg" />
+                                              </div>
+                                          </header>
+                                          <article>
+                                              <p>Push notifications is a <span class="tag">#win</span></p>
+                                          </article>
+                                      </section>
 
 
-                            <div class="comment-container closed comment-7">
-                                <div class="comment-pop">
-                                    <section>
-                                        <header class="flex flex-row">
-                                            <div class="">
-                                                <span class="user-ico"><img src="/img/profile-3.png" /></span>
-                                                <strong>Donna</strong>
-                                            </div>
-                                            <div>
-                                                <img src="img/icons.svg" />
-                                            </div>
-                                        </header>
-                                        <article>
-                                            <p>Thanks for sharing this! Super interesting interview. I'd like to show this to the rest of the engineering team if that's ok?</p>
-                                        </article>
-                                    </section>
+                                  </div>
+                                  <div class="comment-notch">
+                                      <span class="user-ico"><img src="/img/profile-2.png" /></span>
+                                  </div>
+                              </div>
+
+                              <div class="comment-container closed comment-4">
+                                  <div class="comment-pop">
+                                      <section>
+                                          <header class="flex flex-row">
+                                              <div class="">
+                                                  <span class="user-ico"><img src="/img/profile-1.png" /></span>
+                                                  <strong>Gordon</strong>
+                                              </div>
+                                              <div>
+                                                  <img src="img/icons.svg" />
+                                              </div>
+                                          </header>
+                                          <article>
+                                              <p>Missing technical details</p>
+                                              <p>He works a lot closer with engineering than I expected for someone so high level.</p>
+                                          </article>
+                                      </section>
 
 
-                                </div>
-                                <div class="comment-notch">
-                                    <span class="user-ico"><img src="/img/profile-3.png" /></span>
-                                </div>
-                            </div>
+                                  </div>
+                                  <div class="comment-notch">
+                                      <span class="user-ico"><img src="/img/profile-1.png" /></span>
+                                  </div>
+                              </div>
 
-                            </div>
+                              <div class="comment-container closed comment-5">
+                                  <div class="comment-pop">
+                                      <section>
+                                          <header class="flex flex-row">
+                                              <div class="">
+                                                  <span class="user-ico"><img src="/img/profile-4.png" /></span>
+                                                  <strong>Cameron</strong>
+                                              </div>
+                                              <div>
+                                                  <img src="img/icons.svg" />
+                                              </div>
+                                          </header>
+                                          <article>
+                                              <p>Unclear iconography. Check out competitor.</p>
+                                              <span class="tag">#future-studies</span><span class="tag">competition</span>
+                                          </article>
+                                      </section>
 
 
-                    </div>
-                </div>
-            </div>
+                                  </div>
+                                  <div class="comment-notch">
+                                      <span class="user-ico"><img src="/img/profile-4.png" /></span>
+                                  </div>
+                              </div>
+
+                              <div class="comment-container closed comment-6">
+                                  <div class="comment-pop">
+                                      <section>
+                                          <header class="flex flex-row">
+                                              <div class="">
+                                                  <span class="user-ico"><img src="/img/profile-1.png" /></span>
+                                                  <strong>Gordon</strong>
+                                              </div>
+                                              <div>
+                                                  <img src="img/icons.svg" />
+                                              </div>
+                                          </header>
+                                          <article>
+                                              <p>Interesting team make up. Can we put a survey together to see how this maps to other teams?</p>
+                                              <span class="tag">#future-studies</span><span class="tag">competition</span>
+                                          </article>
+                                      </section>
+
+
+                                  </div>
+                                  <div class="comment-notch">
+                                      <span class="user-ico"><img src="/img/profile-1.png" /></span>
+                                  </div>
+                              </div>
+
+
+                              <div class="comment-container closed comment-7">
+                                  <div class="comment-pop">
+                                      <section>
+                                          <header class="flex flex-row">
+                                              <div class="">
+                                                  <span class="user-ico"><img src="/img/profile-3.png" /></span>
+                                                  <strong>Donna</strong>
+                                              </div>
+                                              <div>
+                                                  <img src="img/icons.svg" />
+                                              </div>
+                                          </header>
+                                          <article>
+                                              <p>Thanks for sharing this! Super interesting interview. I'd like to show this to the rest of the engineering team if that's ok?</p>
+                                          </article>
+                                      </section>
+
+
+                                  </div>
+                                  <div class="comment-notch">
+                                      <span class="user-ico"><img src="/img/profile-3.png" /></span>
+                                  </div>
+                              </div>
+
+                              </div>
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
 
             <!-- <img src="img/splash-bg.jpg" /> -->
 
-            <h2>Supercharge your research.</h2>
-            <p>Stop sharing word docs and .txt files, start sharing insights.</p>
+        <div class="chevron">
+          <svg width="58px" height="32px" viewBox="0 0 58 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="polish" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+                  <g id="Artboard-Copy" transform="translate(-611.000000, -602.000000)" fill="#003F6E">
+                      <path d="M667.700955,603.310535 L668.870545,604.480126 L640.220402,633.130269 L611.129455,604.039322 L612.299045,602.869731 L640.220402,630.791088 L667.700955,603.310535 Z" id="Combined-Shape"></path>
+                  </g>
+              </g>
+          </svg>
+        </div>
 
-            <div id="beta-button" class="flex flex-col">
-                <a href="#mc_embed_signup" class="btn">Sign up for the beta</a>
-            </div>
+
     </section>
+
+    <section id="beta-button" class="white-angle">
+        <div class="width">
+              <p class="no-pad no-mar">The real voices of your customers:</p>
+              <h2> annotated, sharable, actionable.</h2>
+              <a href="#mc_embed_signup" class="btn">Sign up for the beta</a>
+        </div>
+    </section>
+
     <section id="features" class="flex flex-row">
             <div id="cards" class="flex flex-col flex-around">
                 <div>
-                    <img src="/img/title-record.svg" />
-                    <p>Words go here</p>
+                    <h3>Record</h3>
+                    <p>One click to start recording,  minimizing awkward setup time at the beginning of every interview.</p>
                 </div>
                 <div >
-                    <img src="/img/title-org.svg" />
-                    <p>Words go here</p>
+                    <h3>Discuss</h3>
+                    <p>Your whole team can see and annotate the recordings, holding discussions which reference the user’s own words.</p>
                 </div>
 
                 <div>
-                    <img src="/img/title-share.svg" />
-                    <p>Words go here</p>
+                    <h3>Share</h3>
+                    <p>Research isn’t useful unless it’s acted upon.  Show off your insights with the rest of your orgnaization.</p>
                 </div>
             </div>
 
@@ -281,19 +318,18 @@
             </div>
         </section>
 
+
+
+
     <section id="signup" class="flex flex-col">
-        <h2>Stop losing valuable insights to the infinite shuffle of papers and get hours days back in your work flow.</h2>
+        <h2>Get hours back, <br /> and make better decisions to boot.</h2>
+        <p>Sign up now for early access.</p>
+
         <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-        	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-        	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-        	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
+
         <div id="mc_embed_signup">
         <form action="https://Gordonherring.us5.list-manage.com/subscribe/post?u=c66fd0481423e6c9049c6b2dc&amp;id=0e22279873" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-        	<h3>Sign Up for the Early-Access!</h3>
         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
         <div class="mc-field-group">
         	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>

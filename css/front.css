@@ -406,9 +406,11 @@ article > div {
     margin: .25em 0;
     border-radius: .25em;
     color: #435055;
-    padding: 2.5rem;
+    padding: 2rem 1.5rem;
     width: 23rem;
     min-height: 12vh; }
+    #features #cards > div > div:first-child {
+      width: 2rem; }
     #features #cards > div h3 {
       color: var(--blue);
       font-size: 2em;

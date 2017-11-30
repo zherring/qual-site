@@ -334,6 +334,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/np-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/np-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/play-button.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -388,41 +398,21 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/splash-bg.jpg": {
-		"ft": 16384,
-		"iS": 115897,
-		"oA": 0,
-		"oAP": "\/img\/splash-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/img\/title-org.svg": {
+	"\/img\/white-angle-b.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/title-org.svg",
+		"oAP": "\/img\/white-angle-b.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/title-record.svg": {
+	"\/img\/white-angle-t.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/title-record.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/title-share.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/title-share.svg",
+		"oAP": "\/img\/white-angle-t.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

@@ -183,6 +183,14 @@ article > div { padding: .5rem; }
 }
 
 #audio-player small { font-weight: bold;  color: var(--gray); }
+#audio-control {
+    .play-button { display: inherit }
+    .pause-button { display: none; }
+    &.paused {
+        .play-button { display: none; }
+        .pause-button { display: inherit; }
+    }
+}
 #beta-button {
 
 }

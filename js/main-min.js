@@ -26,8 +26,7 @@ const commentContainer = document.querySelectorAll(".comment-container");
 function commentToggle (e) {
     console.log("comment logged!", e, (this.classList.contains("closed")));
     this.classList.contains("closed") ? this.classList.remove("closed") : this.classList.add("closed");
-    // commentContainer.forEach(comment => comment.classList.add("closed"));
-}
+    }
 
 commentContainer.forEach(comment => comment.addEventListener("click", commentToggle));
 
@@ -36,7 +35,7 @@ commentContainer.forEach(comment => comment.addEventListener("click", commentTog
 // audio fix
 const player = document.querySelector('#audio-player');
 const audio = document.querySelector('#audio-file');
-const toggle = document.querySelector('.toggle');
+const toggle = document.querySelectorAll('.toggle');
 const icon = document.querySelector('#audio-control');
 const audioControl = document.querySelector('#audio-control');
 const progress = player.querySelector('.progress');
@@ -51,9 +50,11 @@ function togglePlay() {
 }
 
 function updateButton() {
-  const icon = this.paused ? '►' : '❚ ❚';
+  // const icon = this.paused ? 'play' : 'pause';
+  console.log(audioControl.classList.contains("paused"));
+  audioControl.classList.contains("paused") ? audioControl.classList.remove("paused") : audioControl.classList.add("paused");
   console.log(icon);
-  toggle.textContent = icon;
+  // audioControl.classList = icon;
 }
 
 function handleRangeUpdate() {
@@ -100,6 +101,9 @@ progress.addEventListener('click', (e) => scrub(e));
 
 audio.addEventListener('timeupdate', updateTime, false);
 
+audio.currentTime = 1;
+updateTime();
+
 
 /// Smooth Scroll
 $(function() {
@@ -116,8 +120,5 @@ $(function() {
     }
   });
 });
-
-audio.currentTime = 1;
-updateTime();
 
 

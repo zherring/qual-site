@@ -134,16 +134,17 @@ article > div {
   overflow: hidden; }
 
 .progress__filled {
-  width: 50%;
+  width: 1%;
   background: var(--light-blue);
   flex: 0;
-  flex-basis: 50%;
+  flex-basis: 1%;
   /*border-radius: 10px;*/ }
 
 #notation-timeline {
   margin-top: -.3rem;
   z-index: 10;
-  postion: relative; }
+  position: relative;
+  height: 1.25rem; }
 
 #audio-player-left {
   margin-right: 1rem; }
@@ -174,7 +175,22 @@ article > div {
   color: var(--gray); }
 
 #splash .comment-container {
-  position: relative; }
+  position: absolute;
+  top: -.4em; }
+  #splash .comment-container.comment-1 {
+    left: 0; }
+  #splash .comment-container.comment-2 {
+    left: 12.4%; }
+  #splash .comment-container.comment-3 {
+    left: 29.1%; }
+  #splash .comment-container.comment-4 {
+    left: 58%; }
+  #splash .comment-container.comment-5 {
+    left: 67%; }
+  #splash .comment-container.comment-6 {
+    left: 87%; }
+  #splash .comment-container.comment-7 {
+    left: 96%; }
   #splash .comment-container::after {
     content: "";
     background: url("/img/comment-tail.svg");

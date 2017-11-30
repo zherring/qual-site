@@ -70,15 +70,20 @@ article > div {
   background-size: contain; }
 
 #beta-button {
-  padding: 8.5em 0; }
+  perspective: 1000px; }
   #beta-button .btn {
-    padding: 1em 15%; }
+    padding: 1em 15%;
+    transition: .6s ease;
+    transform: translateY(0) rotateX(0) translate3d(0, 0, 0); }
+  #beta-button .btn:hover {
+    transform: translateY(0.3em) rotateX(10deg) translate3d(0, 0, 2em);
+    box-shadow: 0 20px 50px 0 rgba(255, 146, 139, 0.4); }
   #beta-button p {
     color: var(--dark-blue);
     margin: 0;
     padding: 0;
     font-size: 1.625em;
-    font-weight: 100; }
+    font-weight: 300; }
   #beta-button h2 {
     color: var(--dark-blue);
     font-weight: bold;
@@ -87,9 +92,35 @@ article > div {
     font-size: 2em; }
 
 .white-angle {
-  background-image: url(/img/white-angle.svg);
+  background: white;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 8% 0 4% 0;
+  padding-top: 3em;
+  padding-bottom: 6em; }
+  .white-angle::before {
+    content: '';
+    pointer-events: none;
+    background: url(/img/white-angle-t.svg) bottom left;
+    position: absolute;
+    bottom: 99%;
+    width: 110%;
+    height: 0px;
+    padding-bottom: 7%;
+    display: block;
+    left: -10%; }
+  .white-angle::after {
+    content: '';
+    pointer-events: none;
+    background: url(/img/white-angle-b.svg) top left;
+    position: absolute;
+    top: 99%;
+    width: 110%;
+    height: 0px;
+    padding-bottom: 3%;
+    display: block;
+    left: -10%; }
 
 #splash h1, #splash h2, #splash p, #splash a {
   color: var(--white);
@@ -118,13 +149,11 @@ article > div {
   border-radius: 2px;
   color: var(--white);
   display: inline-block;
-  border-radius: .5rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   padding: 1.2em 2.5rem;
-  font-size: 1.2em;
-  margin: 0 .3em; }
+  font-size: 1.2em; }
 
 .btn-small {
   padding: .3rem 1rem .2rem;
@@ -320,10 +349,12 @@ article > div {
   align-items: center; }
   #signup h2 {
     text-align: center;
-    color: var(--blue); }
+    color: var(--blue);
+    font-weight: 300; }
   #signup h3 {
     text-align: center;
-    color: var(--black); }
+    color: var(--black);
+    font-weight: 300; }
   #signup > * {
     width: 50%;
     min-width: 44rem; }

@@ -347,9 +347,11 @@ article > div {
       vertical-align: middle; }
   #splash .comment-container .user-ico {
     width: 2.3rem; }
-  #splash .comment-container .comment-notch .user-ico img {
-    width: 1.5rem;
-    margin-top: .5rem; }
+  #splash .comment-container .comment-notch {
+    cursor: pointer; }
+    #splash .comment-container .comment-notch .user-ico img {
+      width: 1.5rem;
+      margin-top: .5rem; }
   #splash .comment-container.closed::after {
     visibility: none;
     opacity: 0;

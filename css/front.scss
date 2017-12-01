@@ -306,7 +306,7 @@ article > div { padding: .5rem; }
       left: 0;
       cursor: pointer;
     }
-    }
+}
 
 
     .time-stamp {
@@ -332,6 +332,7 @@ article > div { padding: .5rem; }
 
         .comment-pop {
             z-index: 0;
+            cursor: pointer;
             position: absolute;
             left: -1.3em;
             top: 3.4em;

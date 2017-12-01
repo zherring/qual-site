@@ -442,7 +442,7 @@ article > div { padding: .5rem; }
     padding-bottom: 3rem;
 
 
-    /*
+
     // translucent ones
     #cards > div:not(.active) {
       background: rgba(27, 105, 163, .5);
@@ -450,7 +450,11 @@ article > div { padding: .5rem; }
       border-radius: .25em;
       color: rgba(255,255,255,.6);
       font-weight: 300;
+      transform: scale(.9);
 
+        &:hover {
+            transform: scale(.95);
+            }
       h3 {
         color: var(--light-blue);
         font-size: 2em;
@@ -458,12 +462,13 @@ article > div { padding: .5rem; }
       }
 
     }
-    */
+
 
     #cards > div {
       background: #FFFFFF;
       box-shadow: 0 5px 18px 0 rgba(0,29,51,0.10);
       border-radius: 4px;
+      cursor: pointer;
 
       margin: .25em 0;
       border-radius: .25em;
@@ -472,6 +477,7 @@ article > div { padding: .5rem; }
 
       width: 23rem;
       min-height: 12vh;
+      transition: all .2s ease-in-out;
 
         & > div:first-child { width: 2rem; }
 

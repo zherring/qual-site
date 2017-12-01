@@ -306,6 +306,7 @@ article > div {
     left: 96%; }
   #splash .comment-container .comment-pop {
     z-index: 0;
+    cursor: pointer;
     position: absolute;
     left: -1.3em;
     top: 3.4em;
@@ -383,34 +384,32 @@ article > div {
   color: var(--white);
   justify-content: center;
   align-items: middle;
-  padding-bottom: 3rem;
-  /*
-    // translucent ones
-    #cards > div:not(.active) {
-      background: rgba(27, 105, 163, .5);
-      margin: .25em 0;
-      border-radius: .25em;
-      color: rgba(255,255,255,.6);
-      font-weight: 300;
-
-      h3 {
-        color: var(--light-blue);
-        font-size: 2em;
-        font-weight: 300;
-      }
-
-    }
-    */ }
+  padding-bottom: 3rem; }
+  #features #cards > div:not(.active) {
+    background: rgba(27, 105, 163, 0.5);
+    margin: .25em 0;
+    border-radius: .25em;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    transform: scale(0.9); }
+    #features #cards > div:not(.active):hover {
+      transform: scale(0.95); }
+    #features #cards > div:not(.active) h3 {
+      color: var(--light-blue);
+      font-size: 2em;
+      font-weight: 300; }
   #features #cards > div {
     background: #FFFFFF;
     box-shadow: 0 5px 18px 0 rgba(0, 29, 51, 0.1);
     border-radius: 4px;
+    cursor: pointer;
     margin: .25em 0;
     border-radius: .25em;
     color: #435055;
     padding: 2rem 1.5rem;
     width: 23rem;
-    min-height: 12vh; }
+    min-height: 12vh;
+    transition: all .2s ease-in-out; }
     #features #cards > div > div:first-child {
       width: 2rem; }
     #features #cards > div h3 {

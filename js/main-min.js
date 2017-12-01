@@ -122,3 +122,20 @@ $(function() {
 });
 
 
+// Features Cards
+
+// Define DOM Elements
+
+const cards = document.querySelectorAll(".card");
+
+function activeCard(e) {
+    // console.log(e, this);
+    cards.forEach(e => e.classList.remove("active"));
+    this.classList.add("active");
+}
+
+cards.forEach(card => card.addEventListener("click", activeCard));
+
+commentContainer.forEach(comment => comment.addEventListener("click", commentToggle));
+
+

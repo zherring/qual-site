@@ -219,13 +219,20 @@ article > div { padding: .5rem; }
     font-size: 1.2em;
     }
 .btn-small {
-    padding: .3rem 1rem .2rem;
+    height: 1.4rem;
+    padding: .3rem .7rem .2rem;
     border: 1px solid var(--white);
     border-radius: .25rem;
     text-transform: uppercase;
     text-decoration: none;
     font-size: .875rem;
     font-family: Roboto, sans-serif;
+    opacity: .5;
+    transition: opacity .1s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
 
 }
 #beta-button {

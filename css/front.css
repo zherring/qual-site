@@ -224,17 +224,11 @@ article > div {
   border-radius: 5px;
   text-align: center; }
 
-#laptop-ui {
+#preview-ui {
   width: 50%; }
 
-#laptop-ui img {
+#preview-ui img {
   width: 100%; }
-
-.card {
-  background: var(--white);
-  box-shadow: 0 2px 20px 0 #0F6BB0;
-  border-radius: 5px;
-  width: 30%; }
 
 .progress {
   flex: 10;
@@ -398,6 +392,9 @@ article > div {
       color: var(--light-blue);
       font-size: 2em;
       font-weight: 300; }
+  #features #cards > div.active {
+    z-index: 1;
+    box-shadow: 0 2px 18px 0 #0A446F; }
   #features #cards > div {
     background: #FFFFFF;
     box-shadow: 0 5px 18px 0 rgba(0, 29, 51, 0.1);
@@ -418,12 +415,26 @@ article > div {
       font-weight: 300;
       margin: 0; }
 
-#laptop {
-  background: url("/img/laptop-ui.png") no-repeat center center;
-  background-size: 52rem auto;
+#preview {
   height: 32rem;
   width: 100%;
-  min-height: 85vh; }
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  overflow: hidden; }
+  #preview > img {
+    max-width: 110%;
+    margin-right: -6rem;
+    border-radius: .3rem;
+    max-height: 35rem; }
+  #preview.record > img:not(.record) {
+    display: none; }
+  #preview.review > img:not(.review) {
+    display: none; }
+  #preview.email > img:not(.email) {
+    display: none; }
 
 #signup {
   background: var(--white);

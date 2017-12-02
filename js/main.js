@@ -127,11 +127,19 @@ $(function() {
 // Define DOM Elements
 
 const cards = document.querySelectorAll(".card");
+const preview = document.querySelector("#preview");
 
 function activeCard(e) {
-    // console.log(e, this);
+    console.log(e, this.dataset.card);
+
+    // remove classes
     cards.forEach(e => e.classList.remove("active"));
+    preview.classList = '';
+
+    //add classes
     this.classList.add("active");
+    preview.classList.add(this.dataset.card);
+
 }
 
 cards.forEach(card => card.addEventListener("click", activeCard));

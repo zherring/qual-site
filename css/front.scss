@@ -243,19 +243,11 @@ article > div { padding: .5rem; }
     border-radius: 5px;
     text-align: center;
     }
-#laptop-ui {
+#preview-ui {
     width: 50%;
     }
 
-#laptop-ui img { width: 100%; }
-
-.card {
-    background: var(--white);
-    box-shadow: 0 2px 20px 0 #0F6BB0;
-    border-radius: 5px;
-    width: 30%;
-    }
-
+#preview-ui img { width: 100%; }
 
     .progress {
       flex:10;
@@ -441,8 +433,6 @@ article > div { padding: .5rem; }
     align-items: middle;
     padding-bottom: 3rem;
 
-
-
     // translucent ones
     #cards > div:not(.active) {
       background: rgba(27, 105, 163, .5);
@@ -463,6 +453,10 @@ article > div { padding: .5rem; }
 
     }
 
+    #cards > div.active {
+        z-index: 1;
+        box-shadow: 0 2px 18px 0 #0A446F;
+        }
 
     #cards > div {
       background: #FFFFFF;
@@ -496,13 +490,29 @@ article > div { padding: .5rem; }
 
     }
 
-#laptop {
-    background: url("/img/laptop-ui.png") no-repeat center center;
-    background-size: 52rem auto;
+#preview {
     height: 32rem;
     width: 100%;
     min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    overflow: hidden;
+
+    & > img {
+        max-width: 110%;
+        margin-right: -6rem;
+        border-radius: .3rem;
+        max-height: 35rem;
+        }
+
+    &.record > img:not(.record) { display: none;}
+    &.review > img:not(.review) { display: none;}
+    &.email > img:not(.email) { display: none;}
+
     }
+
 
 #signup {
     // fonts look lighter on white, so i'm beefing them up

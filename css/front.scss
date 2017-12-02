@@ -505,11 +505,14 @@ article > div { padding: .5rem; }
         margin-right: -6rem;
         border-radius: .3rem;
         max-height: 35rem;
+        transition: opacity .2s ease-in-out;
+        visibility: collapse;
+        opacity: 0;
         }
 
-    &.record > img:not(.record) { display: none;}
-    &.review > img:not(.review) { display: none;}
-    &.email > img:not(.email) { display: none;}
+    &.record > img.record { visibility: visible; opacity: 1;}
+    &.review > img.review { visibility: visible; opacity: 1;}
+    &.email > img.email { visibility: visible; opacity: 1; }
 
     }
 

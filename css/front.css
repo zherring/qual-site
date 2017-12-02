@@ -428,13 +428,19 @@ article > div {
     max-width: 110%;
     margin-right: -6rem;
     border-radius: .3rem;
-    max-height: 35rem; }
-  #preview.record > img:not(.record) {
-    display: none; }
-  #preview.review > img:not(.review) {
-    display: none; }
-  #preview.email > img:not(.email) {
-    display: none; }
+    max-height: 35rem;
+    transition: opacity .2s ease-in-out;
+    visibility: collapse;
+    opacity: 0; }
+  #preview.record > img.record {
+    visibility: visible;
+    opacity: 1; }
+  #preview.review > img.review {
+    visibility: visible;
+    opacity: 1; }
+  #preview.email > img.email {
+    visibility: visible;
+    opacity: 1; }
 
 #signup {
   background: var(--white);

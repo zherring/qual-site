@@ -35,7 +35,6 @@ function commentToggle (e) {
 
 commentContainer.forEach(comment => comment.addEventListener("click", commentToggle));
 
-// ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
 
 // audio fix
 const player = document.querySelector('#audio-player');

@@ -18,14 +18,19 @@ function fancyTimeFormat(time)
     return ret;
 }
 
-
-//comments
+// Comments toggle
 
 const commentContainer = document.querySelectorAll(".comment-container");
 
 function commentToggle (e) {
-    console.log("comment logged!", e, (this.classList.contains("closed")));
-    this.classList.contains("closed") ? this.classList.remove("closed") : this.classList.add("closed");
+
+    if(this.classList.contains("closed")) {
+        commentContainer.forEach(comment => comment.classList.add("closed"));
+        this.classList.remove("closed")
+    }
+    else {
+        commentContainer.forEach(comment => comment.classList.add("closed"));
+        }
     }
 
 commentContainer.forEach(comment => comment.addEventListener("click", commentToggle));
@@ -130,8 +135,6 @@ const cards = document.querySelectorAll(".card");
 const preview = document.querySelector("#preview");
 
 function activeCard(e) {
-    console.log(e, this.dataset.card);
-
     // remove classes
     cards.forEach(e => e.classList.remove("active"));
     preview.classList = '';
@@ -145,3 +148,7 @@ function activeCard(e) {
 cards.forEach(card => card.addEventListener("click", activeCard));
 
 commentContainer.forEach(comment => comment.addEventListener("click", commentToggle));
+
+
+
+/// Comment Autoplay

@@ -45,6 +45,7 @@ article > div { padding: .5rem; }
 .flex-around { justify-content: space-around;}
 .flex-row { flex-direction: row; }
 .flex-col { flex-direction: column; }
+.flex-center { justify-content: center; }
 
 .no-pad {padding: 0;}
 .no-mar {margin: 0;}
@@ -477,7 +478,7 @@ article > div { padding: .5rem; }
       padding: 2rem 1.5rem;
 
       width: 23rem;
-      min-height: 12vh;
+      min-height: 8rem;
       transition: all .2s ease-in-out;
 
         & > div:first-child { width: 2rem; }
@@ -499,7 +500,6 @@ article > div { padding: .5rem; }
 
 #preview {
     width: 100%;
-    min-height: 85vh;
     overflow: hidden;
     position: relative;
 

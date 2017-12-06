@@ -58,6 +58,9 @@ article > div {
 .flex-col {
   flex-direction: column; }
 
+.flex-center {
+  justify-content: center; }
+
 .no-pad {
   padding: 0; }
 
@@ -410,7 +413,7 @@ article > div {
     color: #435055;
     padding: 2rem 1.5rem;
     width: 23rem;
-    min-height: 12vh;
+    min-height: 8rem;
     transition: all .2s ease-in-out; }
     #features #cards > div > div:first-child {
       width: 2rem; }
@@ -422,7 +425,6 @@ article > div {
 
 #preview {
   width: 100%;
-  min-height: 85vh;
   overflow: hidden;
   position: relative; }
   #preview > img {

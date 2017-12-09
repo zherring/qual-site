@@ -151,5 +151,10 @@ commentContainer.forEach(comment => comment.addEventListener("click", commentTog
 
 
 /// Comment Autoplay
+//
+// commentArray = [2, 15, 64, 35];
+// checkCommentArray = function() { console.log("checking time", commentArray.includes(Math.floor(audio.currentTime))); }
+//
+// audio.addEventListener('timeupdate', checkCommentArray, false);
 
 
